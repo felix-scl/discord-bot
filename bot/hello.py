@@ -1,15 +1,4 @@
-import discord
-
-
-intents = discord.Intents.default()
-intents.message_content = True
-
-bot = discord.Bot(intents=intents)
-
-
-@bot.event
-async def on_ready():
-    print(f'Logged in as {bot.user}')
+from bot_setup import bot
 
 
 @bot.event
