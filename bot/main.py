@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from bot_setup import bot
-import hello
+from bot import hello, quote
 
 load_dotenv()
 
