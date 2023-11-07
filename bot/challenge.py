@@ -7,26 +7,27 @@ from utils.url_validation import url_validation
 from utils.html_parse import get_h1_text
 
 load_dotenv()
+data_path = os.path.join(os.path.dirname(__file__), '.', 'data', 'challenges.json')
 
 
 def get_random_challenge():
-    with open('data/challenges.json', 'r') as file:
+    with open(data_path, 'r') as file:
         data = json.load(file)
     random_challenge = random.choice(data['challenges'])
     return random_challenge['name'], random_challenge['url']
 
 
 def get_all_challenges():
-    with open('data/challenges.json', 'r') as file:
+    with open(data_path, 'r') as file:
         data = json.load(file)
     return data['challenges']
 
 
 def add_challenge_to_file(name, url):
-    with open('data/challenges.json', 'r') as file:
+    with open(data_path, 'r') as file:
         data = json.load(file)
     data['challenges'].append({'name': name, 'url': url})
-    with open('data/challenges.json', 'w') as file:
+    with open(data_path, 'w') as file:
         json.dump(data, file)
 
 
