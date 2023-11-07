@@ -12,16 +12,16 @@ Implemented all the commands from the challenge with the following names:
 *  `/quote` : bot answers with a random quote from [dummyjson.com](https://dummyjson.com/)
 *  `/challenge` : bot answers with a random challenge from [codingchallenges.fyi](https://codingchallenges.fyi/challenges)
 *  `/challenges_list` : bot answers with a list of coding challenges
-*  `/add_challenge` `url` : bot checks if it's a valid [codingchallenges.fyi] challenge and adds it to the current list of challenges
+*  `/add_challenge` `url` : bot checks if it's a valid [codingchallenges.fyi](https://codingchallenges.fyi/challenges) challenge and adds it to the current list of challenges
 
 ## How to set up
 
-* `python -m venv env`
-* `source env/scripts/activate`
-* `python -m pip install -r requirements.txt`
+* `python -m venv env` to create a virtual environment
+* `source env/scripts/activate` to activate the virtual environment
+* `pip install -r requirements.txt` to install all packages
 
 ## Built with (main packages)
 
-+ Py-cord
+* Py-cord
 * BeautifulSoup
 * Requests
