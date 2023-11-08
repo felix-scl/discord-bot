@@ -25,3 +25,12 @@ Implemented all the commands from the challenge with the following names:
 * Py-cord
 * BeautifulSoup
 * Requests
+
+## Screenshots
+
+<div>
+  <img src="./screenshots/quote.png" alt="quotes" width="500px" />
+  <img src="./screenshots/challenge.png" alt="random challenge" width="500px" />
+  <img src="./screenshots/challenges_list.png" alt="list of challenges" width="500px" />
+  <img src="./screenshots/slash_commands.png" alt="slash commands" width="500px" />
+</div>
