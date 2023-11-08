@@ -7,8 +7,12 @@ load_dotenv()
 
 
 def get_quote():
-    data = requests.get('https://dummyjson.com/quotes/random')
-    return data.json()['quote']
+    try:
+        response = requests.get('https://dummyjson.com/quotes/random')
+        response.raise_for_status()
+        return response.json()['quote']
+    except requests.exceptions.RequestException as e:
+        return f'An error has occurred while fetching the quote: {str(e)}'
 
 
 @bot.slash_command(description='Generate a random quote')
